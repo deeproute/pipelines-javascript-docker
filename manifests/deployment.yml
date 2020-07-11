@@ -4,6 +4,9 @@ metadata:
   name: deeproutepipelinesjavascriptdocker 
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: deeproutepipelinesjavascriptdocker
   template:
     metadata:
       labels:
